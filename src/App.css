@@ -4,6 +4,8 @@
     border-radius: 20px;
     height: 650px;
     width: 550px;
+    display: flex;
+	justify-content: center;
 }
 
 @media(min-height: 900px){
@@ -11,4 +13,30 @@
     height: 700px;
     width: 600px;
  }   
+}
+
+#input{
+    margin: 2em;
+    width: 20rem;
+    height: 2em;
+    border-radius: 5px;
+    border: 0px;
+}
+
+#add-task{
+    height: 2em;
+    width: fit-content;
+    background-color: lightgreen;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: small;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+#add-task:hover{
+    background-color: rgb(64, 216, 64);
+    transform: translateY(-5px);
+    transition-duration: 500ms;
+    
 }
