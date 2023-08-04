@@ -1,0 +1,14 @@
+.content{
+    background-color: #89f5ef;
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 650px;
+    width: 550px;
+}
+
+@media(min-height: 900px){
+ .content{
+    height: 700px;
+    width: 600px;
+ }   
+}

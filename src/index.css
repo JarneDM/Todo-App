@@ -1,0 +1,16 @@
+body{
+    font-family: monospace;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    background: linear-gradient(black, blue);
+}
+
+@media(min-height: 900px){
+    body{
+        height: 97.8vh;
+    }
+}
+
