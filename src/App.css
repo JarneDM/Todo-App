@@ -21,6 +21,7 @@
     height: 2em;
     border-radius: 5px;
     border: 0px;
+    padding-left: 5px;
 }
 
 #add-task{
@@ -38,5 +39,4 @@
     background-color: rgb(64, 216, 64);
     transform: translateY(-5px);
     transition-duration: 500ms;
-    
 }
