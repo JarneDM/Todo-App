@@ -1,15 +1,15 @@
-import React from 'react'
-import './App.css'
-
+import React from 'react';
 
 function Task() {
   return (
     <div className="bottom-content">
-        <ul className='task-list' id='tasks'>
-          
-        </ul>
+      <dl className='task-list' id='tasks'>
+        <dt>Task 1</dt>
+        <dd>Task description 1</dd>
+        {/* Add more tasks as needed */}
+      </dl>
     </div>
-  )
+  );
 }
 
-export default Task
+export default Task;

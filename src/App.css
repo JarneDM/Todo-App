@@ -40,3 +40,9 @@
     transform: translateY(-5px);
     transition-duration: 500ms;
 }
+
+.bottom-content{
+    margin: auto;
+    justify-content: start;
+    align-items: start;
+}
