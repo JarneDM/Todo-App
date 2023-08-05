@@ -1,18 +1,15 @@
 import React from 'react'
 import './App.css'
+import AddTask from './AddTask'
+import Task from './Task'
 
 function TodoList() {
   return (
     <>
         <div className='content'>
-          <div className="top-content">
-            <input type="text" id='input' placeholder='Task...'/>
-            <button id='add-task'>Add Task</button>
-          </div>
+          <AddTask />
 
-          <div className="bottom-content">
-            <ul className='task-list' id='tasks'></ul>
-          </div>
+          <Task />
         </div>
     </>
   )
