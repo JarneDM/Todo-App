@@ -17,21 +17,17 @@
 
 #input{
     margin: 2em;
+    margin-right: 0;
     width: 20rem;
     height: 2em;
     border-radius: 5px;
     border: 0px;
     padding-left: 5px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 #input::placeholder{
-    color: white;
-}
-
-#input:enabled{
-    background-color: white;
     color: black;
 }
 
