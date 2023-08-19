@@ -1,5 +1,5 @@
 .content{
-    background-color: #89f5ef;
+    background-color: beige;
     border: 1px solid black;
     border-radius: 20px;
     height: 650px;
@@ -22,7 +22,19 @@
     border-radius: 5px;
     border: 0px;
     padding-left: 5px;
+    background-color: black;
+    color: white;
 }
+
+#input::placeholder{
+    color: white;
+}
+
+#input:enabled{
+    background-color: white;
+    color: black;
+}
+
 
 #add-task{
     height: 2em;
