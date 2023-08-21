@@ -3,15 +3,15 @@
     border: 1px solid black;
     border-radius: 20px;
     height: 650px;
-    width: 590px;
-    display: flex;
+    width: 500px;
+    /* display: flex; */
 	justify-content: center;
 }
 
 @media(min-height: 900px){
  .content{
     height: 700px;
-    width: 600px;
+    width: 500px;
  }   
 }
 
@@ -22,7 +22,6 @@
 
 #input{
     margin: 2em;
-    margin-right: 0;
     width: 20rem;
     height: 2em;
     border-radius: 5px;
@@ -38,6 +37,7 @@
 
 
 #add-task{
+    margin-right: 0;
     height: 2em;
     width: fit-content;
     background-color: lightgreen;
@@ -55,7 +55,7 @@
 }
 
 .bottom-content{
-    margin: auto;
+    margin-left: 15px;
     justify-content: start;
     align-items: start;
 }
