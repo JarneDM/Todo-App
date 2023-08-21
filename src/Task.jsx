@@ -1,15 +1,16 @@
 import React from 'react';
 
-function Task() {
+function Task({ tasks }) {
   return (
     <div className="bottom-content">
       <dl className='task-list' id='tasks'>
-        <dt>Task 1</dt>
-        <dd>Task description 1</dd>
-        {/* Add more tasks if needed */}
+        {tasks.map((task, index) => (
+          <dt key={index}>{task}</dt>
+        ))}
       </dl>
     </div>
   );
 }
+
 
 export default Task;

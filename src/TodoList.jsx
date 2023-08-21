@@ -1,18 +1,21 @@
-import React from 'react'
-import './App.css'
-import AddTask from './AddTask'
-import Task from './Task'
+import React, { useState } from 'react';
+import './App.css';
+import AddTask from './AddTask';
+import Task from './Task';
 
 function TodoList() {
-  return (
-    <>
-        <div className='content'>
-          <AddTask />
+  const [tasks, setTasks] = useState([]);
 
-          <Task />
-        </div>
-    </>
-  )
+  const addTask = (task) => {
+    setTasks([...tasks, task]);
+  };
+
+  return (
+    <div className='content'>
+      <AddTask onAddTask={addTask} />
+      <Task tasks={tasks} />
+    </div>
+  );
 }
 
-export default TodoList
+export default TodoList;
