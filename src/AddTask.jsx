@@ -15,6 +15,7 @@ function AddTask({ onAddTask }) {
     if (message.trim() !== '') {
       onAddTask(message); // Add the task to the list
       setMessage('');
+      
     }
   };
 

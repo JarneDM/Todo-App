@@ -59,3 +59,31 @@
     justify-content: start;
     align-items: start;
 }
+
+.task{
+    background-color: white;
+    margin-bottom: 5px;
+    height: 2rem;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    padding-left: 5px;
+    width: 96%;
+    border-radius: 5px;
+}
+
+.task:hover{
+    background-color: rgb(172, 170, 170);
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
