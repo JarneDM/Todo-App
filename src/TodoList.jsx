@@ -5,6 +5,7 @@ import Task from './Task';
 
 function TodoList() {
   const [tasks, setTasks] = useState([]);
+  // make removeTask function and pass it as a prop. function removes task from setTasks
 
   const addTask = (task) => {
     setTasks([...tasks, task]);
