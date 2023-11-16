@@ -11,6 +11,12 @@ function TodoList() {
     setTasks([...tasks, task]);
   };
 
+  const removeTask = (task) => {
+    // tasks.
+    // tasks is array, task is object in array!
+    // remove task from tasks using the key of the object!
+  }
+
   return (
     <div className='content'>
       <AddTask onAddTask={addTask} />
