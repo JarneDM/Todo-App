@@ -8,6 +8,7 @@ function TodoList() {
   // make removeTask function and pass it as a prop. function removes task from setTasks
 
   const addTask = (task) => {
+    // console.log(task);
     setTasks([...tasks, task]);
   };
 

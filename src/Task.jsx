@@ -11,6 +11,8 @@ function Task({ tasks }) {
     // if task is clicked then remove the task
     e.preventDefault();
     console.log('Removing task...')
+    // console.log(e.index);
+    console.log(tasks);
 
 
   } 
@@ -20,7 +22,7 @@ function Task({ tasks }) {
     <div className="bottom-content">
       <dl className='task-list' id='tasks'>
         {tasks.map((task, index) => (
-          <button className='task-btn' key={index} onClick={RemoveTask}><dt className='task' key={index}>{task}</dt></button> 
+          <button className='task-btn' key={index} onClick={RemoveTask}><dt className='task' >{task}</dt></button> 
         ))}
       </dl>
     </div>
