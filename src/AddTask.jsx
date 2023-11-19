@@ -1,21 +1,21 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 // import Task from './Task';
 
 function AddTask({ onAddTask }) {
-  const [message, setMessage] = useState('');
+  const [todo, setTodo] = useState('');
 
   const handleMessage = (e) => {
-    setMessage(e.currentTarget.value);
+    setTodo(e.currentTarget.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (message.trim() !== '') {
-      onAddTask(message); // Add the task to the list
-      setMessage('');
-      // console.log(message);
+    if (todo.trim() !== '') {
+      onAddTask(todo); // Add the task to the list
+      setTodo('');
+      
     }
   };
 
@@ -26,7 +26,7 @@ function AddTask({ onAddTask }) {
         onChange={handleMessage}
         id='input'
         placeholder='Task...'
-        value={message}
+        value={todo}
       />
       <button type='submit' onClick={handleSubmit} id='add-task'>Add Task</button>
     </div>
