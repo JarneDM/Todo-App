@@ -1,7 +1,6 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './App.css'
-// import Task from './Task';
 
 function AddTask({ onAddTask }) {
   const [todo, setTodo] = useState('');
@@ -12,10 +11,10 @@ function AddTask({ onAddTask }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (todo.trim() !== '') {
       onAddTask(todo); // Add the task to the list
       setTodo('');
-      
     }
   };
 
@@ -28,7 +27,13 @@ function AddTask({ onAddTask }) {
         placeholder='Task...'
         value={todo}
       />
-      <button type='submit' onClick={handleSubmit} id='add-task'>Add Task</button>
+      <button 
+        type='submit' 
+        onClick={handleSubmit} 
+        id='add-task'
+        >
+          Add Task  
+      </button>
     </div>
   );
 }
