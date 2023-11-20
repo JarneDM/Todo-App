@@ -3,7 +3,6 @@ import React from 'react';
 function Task({ tasks, setTasks }) {
 
   const removeTask = (index) => {
-    console.log(`removing task at index: ${index}`);
     // Create a new array without the task to be removed
     const updatedTasks = tasks.filter((_, i) => i !== index);
     setTasks(updatedTasks);

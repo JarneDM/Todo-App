@@ -6,12 +6,10 @@ function AddTask({ onAddTask }) {
   const [todo, setTodo] = useState('');
 
   const handleMessage = (e) => {
-    setTodo(e.currentTarget.value);
+    setTodo(e?.currentTarget.value);
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-
     if (todo.trim() !== '') {
       onAddTask(todo); // Add the task to the list
       setTodo('');
