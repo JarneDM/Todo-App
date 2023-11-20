@@ -54,6 +54,15 @@
     transition-duration: 500ms;
 }
 
+#add-task:hover:disabled{
+    transform: none;
+    background-color: lightgreen;
+}
+
+#add-task:disabled{
+    border: none;
+}
+
 .bottom-content{
     margin-left: 15px;
     justify-content: start;
