@@ -31,6 +31,7 @@ function AddTask({ onAddTask }) {
         type='submit' 
         onClick={handleSubmit} 
         id='add-task'
+        disabled={todo.trim().length===0}
         >
           Add Task  
       </button>
