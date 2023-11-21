@@ -1,0 +1,2 @@
+1. background stops at 100vh (tasks go further than that sometimes).
+2. footer disappears behind the tasks when there are alot of tasks.

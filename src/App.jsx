@@ -6,6 +6,7 @@ function App() {
   return (
     <>
       <TodoList />
+      <footer>&copy; Jarne DM 2023</footer>
     </>
   )
 }

@@ -1,6 +1,6 @@
 .content{
-    background-color: beige;
-    border: 1px solid black;
+    /* background-color: beige; */
+    /* border: 1px solid black; */
     border-radius: 20px;
     height: 650px;
     width: 500px;
@@ -25,7 +25,7 @@
     width: 20rem;
     height: 2em;
     border-radius: 5px;
-    border: 0px;
+    border: 1px solid black;
     padding-left: 5px;
     background-color: white;
     color: black;
@@ -38,32 +38,41 @@
 
 #add-task{
     margin-right: 0;
+    color: white;
     height: 2em;
     width: fit-content;
-    background-color: lightgreen;
+    background-color: rgb(79, 118, 236);
     border-radius: 5px;
-    border: 1px solid black;
+    border: 2px solid balck;
     font-size: small;
     cursor: pointer;
     transition-duration: 500ms;
 }
 
+#add-task:enabled{
+    background-color: rgb(0, 0, 103);
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
 #add-task:hover{
-    background-color: rgb(64, 216, 64);
+    /* background-color: rgb(64, 163, 216); */
+    background-color: rgb(0, 0, 103);
     transform: translateY(-5px);
     transition-duration: 500ms;
 }
 
 #add-task:hover:disabled{
     transform: none;
-    background-color: lightgreen;
+    background-color: rgb(79, 118, 236);
+    color: white;
 }
 
 #add-task:disabled{
     border: none;
 }
 
-.bottom-content{
+/* .bottom-content{
     margin-left: 15px;
     justify-content: start;
     align-items: start;
@@ -71,39 +80,42 @@
     width: 94%;
     background-color: white;
     border-radius: 10px;
-}
+} */
 
-.task{
-    background-color: white;
-    margin-bottom: 5px;
-    height: 2rem;
+.task {
+    background-color: rgb(88, 5, 121);
+    /* background: linear-gradient(rgb(4, 4, rgb(56, 9, 76), 95)); */
+    color: white;
+    font-size: larger;
+    margin-top: 5px;
+    height: fit-content;
+    padding: 10px;
     justify-content: start;
     align-items: center;
     display: flex;
     padding-left: 5px;
-    width: 96%;
-    border-radius: 5px;
-    border: 1px solid black;
+    width: 90%;
+    position: relative;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: left;
 }
+
 
 .task:hover{
-    background-color: rgb(172, 170, 170);
-}
-
-.visible {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity 2s linear;
-}
-
-.hidden {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s 2s, opacity 2s linear;
+    background-color: rgb(0, 0, 103);
 }
 
 .task-btn{
     border: none;
     background: none;
     width: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    margin: 0 auto;
+    color: white;
 }

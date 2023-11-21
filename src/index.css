@@ -4,8 +4,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 97vh;
-    background: linear-gradient(white, rgb(239, 239, 189));
+    height: 100vh;
+    background: linear-gradient(darkblue, rgb(129, 0, 152));
 }
 
 @media(min-height: 900px){
