@@ -16,7 +16,7 @@ function AddTask({ onAddTask }) {
 
   const handleSubmit = (e) => {
     if (todo.trim() !== '') {
-      onAddTask(todo); // Add the task to the list
+      onAddTask(todo); 
       setTodo('');
     }
   };
