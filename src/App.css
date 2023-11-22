@@ -29,17 +29,18 @@
     padding-left: 5px;
     background-color: white;
     color: black;
+    font-size: large;
 }
 
 #input::placeholder{
-    color: black;
+    color: rgb(128, 127, 127);
 }
 
 
 #add-task{
     margin-right: 0;
     color: white;
-    height: 2em;
+    height: 2.5em;
     width: fit-content;
     background-color: rgb(79, 118, 236);
     border-radius: 5px;

@@ -13,13 +13,5 @@ body{
     body{
         height: 97.8vh;
     }
-
-    footer{
-        display: flex;
-        justify-content: center;
-        /* place-items: center; */
-        margin: 0 auto;
-        /* color: white; */
-    }
 }
 
