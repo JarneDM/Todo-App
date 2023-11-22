@@ -8,9 +8,18 @@ body{
     background: linear-gradient(darkblue, rgb(129, 0, 152));
 }
 
+
 @media(min-height: 900px){
     body{
         height: 97.8vh;
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        /* place-items: center; */
+        margin: 0 auto;
+        /* color: white; */
     }
 }
 

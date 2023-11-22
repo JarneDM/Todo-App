@@ -112,10 +112,3 @@
     width: 100%;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    place-items: center;
-    margin: 0 auto;
-    color: white;
-}
