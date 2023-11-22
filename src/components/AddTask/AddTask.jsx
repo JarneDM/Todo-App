@@ -8,6 +8,12 @@ function AddTask({ onAddTask }) {
     setTodo(e?.currentTarget.value);
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      handleSubmit();
+    }
+  };
+
   const handleSubmit = (e) => {
     if (todo.trim() !== '') {
       onAddTask(todo); // Add the task to the list
@@ -20,6 +26,7 @@ function AddTask({ onAddTask }) {
       <input
         type="text"
         onChange={handleMessage}
+        onKeyDown={handleKeyDown}
         id='input'
         placeholder='Task...'
         value={todo}
