@@ -51,7 +51,7 @@
 }
 
 #add-task:enabled{
-    background-color: rgb(0, 0, 103);
+    background-color: rgb(11, 11, 241);
     border: 2px solid white;
     border-radius: 5px;
 }
@@ -65,12 +65,12 @@
 
 #add-task:hover:disabled{
     transform: none;
-    background-color: rgb(79, 118, 236);
-    color: white;
 }
 
 #add-task:disabled{
+    background-color: rgb(168, 182, 226);
     border: none;
+    color: grey;
 }
 
 /* .bottom-content{
