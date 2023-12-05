@@ -18,6 +18,8 @@ To run the app locally, follow these steps:
 4. Run `npm run dev` to start the Vite development server.
 5. Open your browser and visit [http://127.0.0.1:5173/](http://127.0.0.1:5173/).
 
+Or visit [Todo App](https://todo-app-jarnedm.vercel.app/).
+
 ## Contributing
 
 If you'd like to contribute to the project, feel free to fork the repository and submit a pull request. I appreciate any help or feedback!
